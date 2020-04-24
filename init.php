@@ -35,7 +35,7 @@ if(DB_HOST && DB_USER && DB_BASE){
 $page = new page();
 
 define('SITE_TITLE', 'New site');
-define('DEFAULT_PAGE', 'index' );
+define('DEFAULT_PAGE', 'index');
 
 /*
 	Lai lapa darbotos no jebkuras mapītes
@@ -56,7 +56,6 @@ $page->set_theme(THEME_PATH . 'index.php');
 
 ob_start();
 if(get_get('act') && file_exists(PAGES_PATH . '/' . get_get('act') . '.php')){
-	echo 'd';
 	require PAGES_PATH . get_get('act') . '.php';
 }else{
 	
